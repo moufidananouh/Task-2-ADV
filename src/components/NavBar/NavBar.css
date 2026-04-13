@@ -1,0 +1,135 @@
+.navbar{
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "outfit";
+    margin-left: 51px;
+    margin-right: 51px !important;
+}
+.top-banner img{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 14px;
+}
+.nav-content{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    gap:10px ;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.logo-img{
+    width:184px;
+    background-color: #FF8D4D;
+    padding: 20px 24px;
+    border-radius: 10px;
+
+}
+.nav-right{
+    width: 992;
+    display: flex;
+    align-items: stretch;
+    margin-left: auto;
+
+}
+.nav-items{
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    align-items: stretch;
+    
+}
+.nav-item {
+    font-size: 20px;
+    color: #262626;
+    cursor: pointer;
+    padding:0 1.5rem; 
+    list-style: none;
+    border-right: 2px solid #262626;
+    display: flex;
+    align-items: center;
+
+}
+.nav-item:first-child{
+    background-color: #FFEFE5;
+    border-left: 2px solid #262626;
+}
+
+.nav-item:last-child{
+    border-right: none;
+
+}
+.contact-btn{
+    width:100% ;
+    font-family: "Outfit";
+    font-size: 20px;
+    color: #262626;
+    background-color: #FFAE80;
+    padding: 25px 34px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.menu-btn{
+    display: none;
+    background-color: #FFEFE5;
+    border:2px solid #262626;
+    border-radius: 10px;
+    padding: 16px 30px;
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width :1440px) {
+    .nav-content {
+        max-width: 1440px;
+    }
+    .nav-right{
+        max-width: 771px;
+    }
+    
+}
+
+@media  screen  and (max-width : 992px){
+    .nav-right{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+        margin-left: 0 auto;
+        cursor: pointer;
+    }
+    .menu-btn img{
+        width: 21px;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        background-color: #FFEFE5;
+    }
+    .mobile-menu ul{
+        list-style: none;
+    }
+    .mobile-item{
+        font-size: 16px;
+        font-family: "Outfit";
+        color: #262626;
+        border-bottom: 2px solid #262626;
+    }
+    .mobile-contact-btn{
+    width:100% ;
+    font-family: "Outfit";
+    font-size: 20px;
+    color: #262626;
+    background-color: #FFAE80;
+    padding: 25px 34px;
+    cursor: pointer;
+    border-radius: 10px;
+    }
+}

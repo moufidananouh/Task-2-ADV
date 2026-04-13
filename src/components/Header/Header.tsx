@@ -1,0 +1,15 @@
+import type { ReactNode } from "react"
+import './Header.css'
+
+interface HeaderProps {
+    children : ReactNode;
+}
+
+const Header = ({children} : HeaderProps) =>{
+    return(
+        <header>
+            {children}
+        </header>
+    )
+}
+export default Header

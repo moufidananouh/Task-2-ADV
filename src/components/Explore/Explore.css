@@ -1,0 +1,166 @@
+.explore-section{
+    padding-left: 162px;
+    padding-right: 162px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.explore-badge{
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10px 20px;
+
+}
+.explore-header{
+    max-width: 996px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 100px;
+}
+.explore-header h2{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 58px;
+    color: #1A1A1A;
+
+}
+.explore-header p{
+    font-family: "Outfit";
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+}
+.explore-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+}
+.explore-card{
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-radius: 12px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.explore-card h3{
+    max-width: 613px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #1A1A1A;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+}
+.explore-card-divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dot-left , .dot-right{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0c0000;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #fff;
+}
+
+.dashes{
+    flex: 1;
+    height: 12px;
+    position: relative;
+}
+.dashes::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    transform: translateY(-50%);
+    background: repeating-linear-gradient(to right,#FFBE99 0px,#FFBE99 60px, transparent 60px,transparent 80px);
+}
+
+.explore-card-description{
+    font-family: "Outfit";
+    font-size: 20px;
+    text-align: center;
+    color: #4C4C4D;
+    margin-top: 50px;
+}
+.explore-card-btn{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 18px 0;
+    background-color: #FFDECC;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    font-family: "Outfit";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+}
+.explore-card-btn img{
+    width: 18px;
+    padding-left: 4.5px;
+}
+@media screen and (max-width:1440px){
+    .explore-badge{
+        font-size: 16px;
+    }
+    .explore-header h2{
+        font-size: 48px;
+    }
+    .explore-header p{
+        font-size: 16px;
+    }
+    .explore-card h3{
+        font-size: 34px;
+    }
+    .explore-card-description{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px){
+    .explore-section{
+        margin-left: 4.5px;
+        margin-right: 4.5px;
+    }
+    .explore-badge{
+        font-size: 16px;
+    }
+    .explore-header h2{
+        font-size: 48px;
+    }
+    .explore-header p{
+        font-size: 16px;
+    }
+    .explore-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .explore-card{
+        width: 100%;
+    }
+
+}

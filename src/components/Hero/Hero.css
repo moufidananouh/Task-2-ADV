@@ -1,0 +1,129 @@
+.hero{
+    background-color: #FFF5F0;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    width: 100%;
+}
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding:  1rem 5vw;
+}
+.hero-image img{
+    max-width: 765px;
+    flex-shrink: 1;
+}
+
+.hero-text h1{
+    font-family: "Outfit";
+    font-size: 22px;
+    text-decoration:underline;
+    color: #262626;
+    text-align: left;
+}
+.hero-text h2{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    line-height: 130%;
+    font-size: 54px;
+    color: #1A1A1A;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.text{
+    color: #FF8D4D;
+}
+.hero-text p{
+    width: 100%;
+    height: auto;
+    font-family: "Outfit";
+    font-size: 20px;
+    line-height: 150%;
+    color: #333333;
+    text-align: left;
+}
+.hero-stats{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    gap: 13px;
+    background-color: #FFEFE5;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px 1px #FFBE99;
+}
+.stat-box{
+    width: 213px;
+}
+.stat-box h3{
+    font-family: "Outfit";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    font-size: 44px;
+    color: #262626;
+
+}
+.stats{
+    font-family: "Outfit";
+    font-weight: 500;
+    font-size: 18px;
+    color: #262626;
+}
+@media screen and (max-width : 1440px){
+    .hero-image img{
+    max-width: 615px;
+}
+    .hero-text h1{
+        font-size: 18px;
+    }
+    .hero-text h2{
+        font-size: 40px;
+    }
+    .hero-text p{
+        font-size: 16px;
+    }
+    .hero-stats{
+        max-width: 615px;
+    }
+    
+}
+@media screen  and (max-width :992px){
+    .hero-wrapper{
+        flex-direction: column;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%
+
+    }
+    .hero-text h1{
+        font-size: 16px;
+    }
+    .hero-text h2{
+        font-size: 30px;
+        max-width: 358px;
+    }
+    .hero-text p{
+        font-size: 16px;
+        max-width: 358px;
+    }
+    .hero-stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .stat-box{
+        border-bottom: 2px solid #262626;
+        padding: 40px;
+    }
+    .stat-box:last-child{
+        border-bottom: none;
+    }
+
+    
+}

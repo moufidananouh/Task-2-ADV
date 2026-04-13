@@ -1,0 +1,141 @@
+.benefits-sec{
+    margin-top: 200px;
+}
+.benefits-badge{
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    color: #333333;
+    font-family: "Outfit";
+    font-size: 18px;
+    width: 287px;
+    margin: 0 auto;
+
+    
+}
+.benefits-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits-header h2{
+    padding: 19px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 58px;
+    line-height: 130%;
+    text-align: center;
+    color: #1A1A1A;
+    margin-bottom: 19px;
+
+}
+.benefits-header p{
+    max-width: 992px;
+    font-family: "Outfit";
+    font-style: Medium;
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 100px;
+}
+.benefits-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 0 80px;
+}
+.benefit-card{
+    max-width: 992px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+
+}
+.benifit-icon{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 34px;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    background-color: #FFDECC;
+    padding: 8px 8px;
+
+}
+.card-title{
+    margin-top: 41px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    color: #1A1A1A;
+    text-align: left;
+    padding-left: 50px;
+
+}
+.card-description{
+    font-family: "Outfit";
+    font-size: 20px;
+    color: #4C4C4D;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+@media screen and (max-width:1440px){
+    .benefits-badge{
+        font-size: 16px;
+    }
+    .benefits-header h2{
+        font-size: 48px;
+    }
+    .benefits-header p{
+        font-size: 16px;
+    }
+    .card-title{
+        font-size: 24px;
+    }
+    .card-description{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:992px){
+        .benefits-badge{
+        font-size: 14px;
+    }
+    .benefits-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%
+    }
+    .benefits-header h2{
+        font-size: 38px;
+    }
+    .benefits-header p{
+        max-width:358px ;
+    }
+    .benefits-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .benefit-card{
+        width: 100%;
+    }
+    .card-title{
+        font-size: 22px;
+    }
+    .card-description{
+        font-size: 16px;
+    }
+}
