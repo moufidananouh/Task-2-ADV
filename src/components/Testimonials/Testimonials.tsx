@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import "./Testimonials.css";
 
 interface Testimonial {
@@ -45,15 +44,13 @@ const testimonials: Testimonial[] = [
     }
 ];
 
-const TestimonialsSection = () => {
-    const [current, setCurrent] = useState(0);
-    const [visibleCards, setVisibleCards] =useState( window.innerWidth <= 992 ? 1 : 3
-    );
-    useEffect(()=>{
-        const handleResize =()=>{
-            setVisibleCards(window.innerWidth<=992 ? 1:3)
-        }
-    })
+const TestimonialsSection =() =>{
+    const [current , setCurrent] = useState(0)
+    const getVisibleCards=()=>{
+        return window.innerWidth <= 992 ? 1 : 3
+    };
+    const visibleCards = getVisibleCards()
+
     const nextSlide = () => {
         setCurrent((prev) => prev + visibleCards >= testimonials.length ? 0: prev + visibleCards
         )
